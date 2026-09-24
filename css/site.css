@@ -1,0 +1,37 @@
+/* Lachgas Rotterdam — shared animations & small overrides (utility classes live in tailwind.css, compiled per site) */
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-in-right {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+  70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in-up { animation: fade-in-up 0.6s ease-out both; }
+.animate-slide-in-right { animation: slide-in-right 0.3s ease-out both; }
+.animate-pulse-ring { animation: pulse-ring 2.2s infinite; }
+.animate-float-slow { animation: float-slow 4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up, .animate-slide-in-right, .animate-pulse-ring, .animate-float-slow, .animate-ping { animation: none !important; }
+  html { scroll-behavior: auto; }
+}
+
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+
+html { scroll-behavior: smooth; }
+
+/* body-scroll-lock helper toggled by js when the mobile menu / lightbox is open */
+body.no-scroll { overflow: hidden; }

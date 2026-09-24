@@ -1,13 +1,13 @@
 {
-  "name": "Lachgas Service Rotterdam",
+  "name": "Lachgas Rotterdam",
   "short_name": "Lachgas Rotterdam",
-  "description": "Lachgas Rotterdam — lachgas bestellen en 24/7 aan huis bezorgd in heel Rotterdam via WhatsApp.",
+  "description": "Lachgas Rotterdam: lachgas bestellen en snel aan huis bezorgd in heel Rotterdam via WhatsApp.",
   "id": "/",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#060b14",
-  "theme_color": "#060b14",
+  "background_color": "#ffffff",
+  "theme_color": "#1d4ed8",
   "lang": "nl",
   "icons": [
     {
